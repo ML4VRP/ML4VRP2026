@@ -34,7 +34,7 @@ The problem instances provided in the competition are taken from two sources, i.
 
 The provided problem instances provided are randomly selected from these three sized problem instances, covering different instance types. The competition will conduct the evaluation of the submitted solution results using a subset of the provided instances (unknown to the participants before the results are presented). 
 
-The problem instances provided in the competition are available to download on the folder [Instances](https://github.com/ML4VRP2023/ML4VRP2023/tree/main/Instances) of this repo. All the VRPTW instances can also be found in [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/). 
+The problem instances provided in the competition are available to download on the `Instances/cvrptw/` directory. All the VRPTW instances can also be found in [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/). 
 
 In addition to the benchmark VRPTW instances, we provide an example problem instance `toy`, locating at 
 - `Instances/cvrptw/txt/toy.txt` and 
