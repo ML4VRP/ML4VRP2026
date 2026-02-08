@@ -50,13 +50,12 @@ Each txt file and json file is named with respect to its corresponding instance 
 Note: See [Solomon's website](http://web.cba.neu.edu/~msolomon/problems.htm) for the detailed instance description.
 
 ## <a id='api'>VRP Solution Evaluator </a>
-<!--extended from the version used in ML4VRP2023-->
-
-The solution evaluator has been extended from the version utilised in ML4VRP2023, with slight modifications to the syntax. <b>Please follow the solution format specified on the [competition website](https://sites.google.com/view/ml4vrp#h.j2mwimqjm1ge).</b>
 
 The Python script `evaluator.py` is the solution evaluation program to use. The solution evaluator takes a solution and the corresponding problem instance to
 - check feasibility of the solution,
 - calculate the objective function value of the solution (following the objective function as stated on the [competition website](https://sites.google.com/view/ml4vrp#h.8tn33nmddfdh)) for feasible solution.
+
+<b>Please follow the solution format specified on the [competition website](https://sites.google.com/view/ml4vrp#h.j2mwimqjm1ge).</b>
 
 ### How to start
 
