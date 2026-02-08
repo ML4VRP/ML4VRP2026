@@ -17,13 +17,13 @@ The X dataset [Uchoa17] is one of the most widely studied CVRP benchmark data se
 
 The problem instances provided in the competition are the instances in the X dataset with customers ranging from 100 to 400, covering different instance types. The competition will evaluate the submitted solution results using a subset of the provided instances (unknown to the participants before the results are presented).
 
-The CVRP problem data can be found under the `Instances/CVRP/vrp/` directory. The JSON files corresponding to the problem instances can be found under the `Instances/CVRP/json/` directory. 
+The CVRP problem data can be found under the `Instances/cvrp/vrp/` directory. The JSON files corresponding to the problem instances can be found under the `Instances/cvrp/json/` directory. 
 
 Each `.vrp` file and json file is named with respect to its corresponding instance name, e.g.: the files corresponding to problem instance **X-n101-k25** is located at
-- `Instances/CVRP/vrp/X-n101-k25.vrp` and 
-- `Instances/CVRP/json/X-n101-k25.json`. 
+- `Instances/cvrp/vrp/X-n101-k25.vrp` and 
+- `Instances/cvrp/json/X-n101-k25.json`. 
 
-Note: The X data set are listed under Uchoa et al. (2014) in CVRPLIB. See the paper [New benchmark instances for the capacitated vehicle routing problem](http://vrp.galgos.inf.puc-rio.br/index.php/en/new-instances) for the detailed instance description.
+Note: The X data set are listed under Uchoa et al. (2014) in CVRPLIB. See the paper [New benchmark instances for the capacitated vehicle routing problem](https://doi.org/10.1016/j.ejor.2016.08.012) for the detailed instance description.
 
 ### <a id='cvrptw'>CVRPTW </a>
 Solomon [Sol87] dataset and Homberger and Gehring [HG99] data set are widely studied CVRPTW benchmark data sets. Both data sets consist of [six types of instances](http://web.cba.neu.edu/~msolomon/problems.htm), i.e., C1, C2, R1, R2, RC1, RC2, which differ with respect to the customers’ geographical locations, vehicle capacity, density and tightness of the time windows. 
@@ -37,14 +37,14 @@ The provided problem instances provided are randomly selected from these three s
 The problem instances provided in the competition are available to download on the folder [Instances](https://github.com/ML4VRP2023/ML4VRP2023/tree/main/Instances) of this repo. All the VRPTW instances can also be found in [CVRPLIB](http://vrp.galgos.inf.puc-rio.br/index.php/en/). 
 
 In addition to the benchmark VRPTW instances, we provide an example problem instance `toy`, locating at 
-- `Instances/CVRPTW/txt/toy.txt` and 
-- `Instances/CVRPTW/json/toy.json`. 
+- `Instances/cvrptw/txt/toy.txt` and 
+- `Instances/cvrptw/json/toy.json`. 
 
-The text files corresponding to the problem instances can be found under the `Instances/CVRPTW/txt/` directory. The JSON files corresponding to the problem instances can be found under the `Instances/CVRPTW/json/` directory. 
+The text files corresponding to the problem instances can be found under the `Instances/cvrptw/txt/` directory. The JSON files corresponding to the problem instances can be found under the `Instances/cvrptw/json/` directory. 
 
 Each txt file and json file is named with respect to its corresponding instance name, e.g.: the files corresponding to problem instance **C102** is located at
-- `Instances/CVRPTW/txt/C102.txt` and 
-- `Instances/CVRPTW/json/C102.json`. 
+- `Instances/cvrptw/txt/C102.txt` and 
+- `Instances/cvrptw/json/C102.json`. 
 
 
 Note: See [Solomon's website](http://web.cba.neu.edu/~msolomon/problems.htm) for the detailed instance description.
@@ -52,7 +52,7 @@ Note: See [Solomon's website](http://web.cba.neu.edu/~msolomon/problems.htm) for
 ## <a id='api'>VRP Solution Evaluator </a>
 <!--extended from the version used in ML4VRP2023-->
 
-The solution evaluator has been extended from the version utilised in ML4VRP2023, with slight modifications to the syntax. <b>Please follow the solution format specified on the [competition website](https://sites.google.com/view/ml4vrp#h.8tn33nmddfdh).</b>
+The solution evaluator has been extended from the version utilised in ML4VRP2023, with slight modifications to the syntax. <b>Please follow the solution format specified on the [competition website](https://sites.google.com/view/ml4vrp#h.j2mwimqjm1ge).</b>
 
 The Python script `evaluator.py` is the solution evaluation program to use. The solution evaluator takes a solution and the corresponding problem instance to
 - check feasibility of the solution,
@@ -87,7 +87,7 @@ For additional examples of usage, please refer to the <a href="./quick-start.ipy
 ## File Structure
 ```
 ├── Instances/
-│   ├── CVRP/
+│   ├── cvrp/
 │   │   ├── json/
 │   │   │   ├──<Instance name>.json
 │   │   │   └── ...
@@ -124,11 +124,6 @@ Weiyao Meng,     University of Nottingham, UK, weiyao.meng2@nottingham.ac.uk
 Isaac Triguero,  University of Granada, Spain, isaaktriguero@go.ugr.es
 
 Mustafa Misir,   Duke Kunshan University, China, mustafa.misir@dukekunshan.edu.cn
-
-
-<div class="alert alert-success" style="display: inline-block;">
-Please contact <strong> Weiyao</strong> in case of any problems or if you require help for the problem instances and the solution evaluator in this repository.
-</div>
 
 ## References
 [HG99] J. Homberger and H. Gehring, "Two evolutionary metaheuristics for the vehicle routing problem with time windows," INFOR: Information Systems and Operational Research, 37(3):297–318, 1999. [PDF](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=a34e12bf0a30deb56233c26d82a0979987bb6ce4)

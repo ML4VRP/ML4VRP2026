@@ -20,7 +20,7 @@ def main(problem_type, instance_name, solution_path):
     if(feasibility == 1):
         print("Number of vehicles: ", nv, ", Total distance: ", td, "Objective value: ", objective)
     else:
-        print("The solution in infeasible!")
+        print("The solution is infeasible!")
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
