@@ -93,7 +93,7 @@ For additional examples of usage, please refer to the <a href="./quick-start.ipy
 │   │   ├── vrp/
 │   │   │   ├──<Instance name>.vrp
 │   │   │   └── ...
-│   ├── CVRPTW/
+│   ├── cvrptw/
 │   │   ├── json/
 │   │   │   ├──<Instance name>.json
 │   │   │   └── ...
